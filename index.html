@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <div class="image">
+      <div class="bg-black">
+        <img src="./img/odin-lined.png" alt="The Odin Project logo">
+        <div class="logo">ODIN</div>
+      </div>
+      <div class="author">Photo by <a target="_blank" href="https://unsplash.com/@mauro_grazzi">Mauro Grazzi</a> on <a target="_blank" href="https://unsplash.com/">Unsplash</a></div>
+    </div>
+
+    <div class="myForm">
+      <p class="header">This is not a real online service! You know you need something like this in your life to help you realize you deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>   
+      <form action="#" method="get">
+        <div class="whiteContainer">
+          <h2>Let's do this!</h2>
+          <div class="inputs">
+            <div class="inpSet">
+              <label for="fname">first name</label>
+              <input type="text" id="fname" name="fname" minlength="3">
+            </div>
+            <div class="inpSet">
+              <label for="lname">last name</label>
+              <input type="text" id="lname" name="lname" minlength="3">
+            </div>
+            <div class="inpSet">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="inpSet">
+              <label for="phone">phone number</label>
+              <input type="tel" id="phone" name="phone" pattern="8\s?\(?[0-9]{3}\)?\s?-[0-9]{3}-[0-9]{2}-?[0-9]{2}">
+              <small>Format: 8 (999) 456-78-90</small>
+            </div>
+            <div class="inpSet">
+              <label for="password">password</label>
+              <input type="text" id="password" name="password">
+            </div>
+            <div class="inpSet">
+              <label for="confirmPassword">confirm password</label>
+              <input type="text" id="confirmPassword" name="confirmPassword">
+            </div>
+          </div>  
+        </div>
+        <input type="submit" value="Create Account">
+      </form> 
+      <p class="helpText">Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </div>
 </body>
 </html>
