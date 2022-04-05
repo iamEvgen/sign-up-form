@@ -128,14 +128,15 @@ p:nth-child(2) {
     padding-left: var(--mainPadding);
     display: flex;
     flex-wrap: wrap;
-    gap: var(--mainPadding);
-    max-width: 30vw;
+    gap: 15px;
+    max-width: 700px;
 }
 
 .inpSet {
     display: flex;
     flex-direction: column;
-    min-width: 13vw;
+    width: 250px;
+    margin-right: var(--mainPadding);
 }
 
 .inpSet label {
@@ -159,4 +160,37 @@ p:nth-child(2) {
 
 .helpText {
     font-weight: 300;
+}
+
+.passwordChekerContainer {
+    height: 60px;
+}
+
+.equalPasswordsContainer {
+    height: 0px;
+}
+
+.passwordCheker {
+    display: none;
+}
+
+.valid {
+    color: green;
+  }
+  
+.valid:before {
+content: "✔ ";
+}
+
+.invalid {
+color: red;
+}
+
+.invalid:before {
+content: "✖ ";
+}
+
+.equalPasswords {
+    color: red;
+    display: none;
 }
